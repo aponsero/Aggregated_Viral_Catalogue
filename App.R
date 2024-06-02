@@ -14,7 +14,7 @@ ui <- dashboardPage(
     sidebarMenu(
       menuItem("Filter Data", tabName = "filter", icon = icon("filter")),
       menuItem("About", tabName = "about", icon = icon("info-circle")),
-      menuItem("Downloads", tabName = "downloads", icon = icon("download"))
+      menuItem("Downloads", tabName = "sequences downloads", icon = icon("download"))
     )
   ),
   dashboardBody(
@@ -39,8 +39,7 @@ ui <- dashboardPage(
                   title = "vOTU representative sequences",
                   width = 9,
                   DT::dataTableOutput("data_table"),
-                  downloadButton("download_meta", "Download metadata"),
-                  downloadButton("download_fasta", "Download fasta")
+                  downloadButton("download_meta", "Download metadata")
                 )
               )
       ),      
