@@ -16,7 +16,7 @@ To run the app locally, follow these steps:
 2. Clone or download the repository from GitHub:
 
 ```bash
-git clone https://github.com/your-username/AVrC-shiny-app.git
+git clone https://github.com/aponsero/AVrC-shiny-app.git
 ```
 
 3. Open the project in RStudio.
