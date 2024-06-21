@@ -1,5 +1,7 @@
 # Aggregated Viral Catalogue (AVrC) user interface
 
+**Authors**: Alise Ponsero & Analstasia Galperina
+
 The AVrC user interface is a Shiny app that allows users to filter and download a subset of the vOTU reference sequences based on various criteria. The app provides a user-friendly interface to select specific values for different variables and retrieve the corresponding data.
 
 User can either download the app locally or use the web-service : [https://ponseroa.shinyapps.io/AVrC/](https://ponseroa.shinyapps.io/AVrC/)
@@ -55,8 +57,8 @@ install.packages(c("shiny", "shinydashboard", "DT", "tidyverse"))
 The Fasta sequences of several data subsets of the AVrC database can be downloaded directly from the Zenodo archive or from the "Sequence Download" tab of the AVrC user interface:
 
 - Representative dataset: Subset of 449,859 viral representative sequences for the AVrC vOTU
-- High quality dataset: Subset of 150,141 viral representative sequences classified as "Complete" or "High Quality" by CheckV
-- Bacteriophage only dataset: Subset of 430,257 viral representative sequences predicted belong to the "Uroviricota", "Phixviricota", "Hofneiviricota" phyla by GeNomad.
+- High quality dataset: Subset of 130,092 viral representative sequences classified as "Complete" or "High Quality" by CheckV
+- Bacteriophage only dataset: Subset of 380,747 viral representative sequences predicted belong to the "Uroviricota", "Phixviricota", "Hofneiviricota" phyla by GeNomad.
 
 ## Metadata summary content
 

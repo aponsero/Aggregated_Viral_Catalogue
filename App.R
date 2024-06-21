@@ -14,7 +14,7 @@ ui <- dashboardPage(
     sidebarMenu(
       menuItem("Filter Data", tabName = "filter", icon = icon("filter")),
       menuItem("About", tabName = "about", icon = icon("info-circle")),
-      menuItem("Downloads", tabName = "sequences downloads", icon = icon("download"))
+      menuItem("Downloads", tabName = "downloads", icon = icon("download"))
     )
   ),
   dashboardBody(
@@ -31,7 +31,7 @@ ui <- dashboardPage(
                   selectizeInput("pred_lifestyle", "Predicted Lifestyle:", choices = unique(data$pred_lifestyle),
                                  selected = c("temperate", "virulent", "uncertain temperate", "uncertain virulent"),
                                  multiple = TRUE),
-                  selectizeInput("host_phylum", "Host Phylum:", choices = unique(data$Host_Phylum), selected = c("Bacteroidota", "Firmicutes", "Actinobacteriota"), multiple = TRUE),
+                  selectizeInput("host_phylum", "Host Phylum:", choices = unique(data$Host_Phylum), selected = c("Bacteroidota", "Pseudomonadota", "Actinobacteriota"), multiple = TRUE),
                   selectizeInput("phylum", "Viral Phylum:", choices = unique(data$Phylum), selected = c("Uroviricota"), multiple = TRUE),
                   actionButton("search_button", "Search")
                 ),
